@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;font-family:baicons2;box-sizing: border-box;}
+* a{text-decoration:none;color:#656565;}
+i{font-style: normal;}
+li,p,ul{padding: 0;margin:0;list-style: none;display: block;}
+/*head*/
+header{color: #666;}
+
+
+header div:first-child{background: #f0f0f0;}
+header div{display: block;}
+header .tool-bar-ctn{width: auto;height: 36px;}
+header .toolbar{padding: 0 4px;font-size: 12px;height: 36px;line-height: 36px;max-width: 1200px;margin-left: auto;margin-right: auto;}
+header .toolbar a{padding: 0 5px;}
+header .toolbar a:hover{padding: 0 5px;color: #FF4466;}
+header .toolbar .toolbar-link{float: left;width: 75%;margin-right: -75%;}
+header .toolbar .toolbar-link .hot-link{color: #f46;}
+header  i .sep{color: silver;margin-left: .5em;margin-right: .5em;}
+header .toolbar .toolbar-link .dropdown{display: inline;position: relative;}
+header .toolbar .toolbar-link .dropdown.mobile a{color: #f46;}
+header .toolbar #user-tools{float: right;margin: 0;color: #666;}
+header .toolbar a.no-padding{padding: 0;}
+header .tool-bar-ctn .toolbar #user-tools li{border-right: 0}
+header .toolbar #user-tools li{display:inline;height: 20px;padding: 2px 10px;border-right: 1px solid silver}
+[class*=" icon-"]::before, [class^="icon-"]::before {
+    font-family: baicons2 !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+header .toolbar #user-tools li .icon-arrow-down::before{ 
+	content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);     
+	 -webkit-transition: .4s -webkit-transform;
+ }
+    header .toolbar #user-tools li .icon-arrow-down{
+    	 display: inline-block;
+    	 -webkit-transition: .4s -webkit-transform;
+    transition: .4s -webkit-transform;
+    transition: .4s transform;
+    transition: .4s transform,.4s -webkit-transform;
+    margin-left: .4em;
+    vertical-align: -1px;
+    line-height: 1em;
+    padding-bottom: 1em;
+position:absolute;
+margin:auto;
+transition:0.4s;/*变化的时间  必须将其写在这里，不可以写在hover里面  只有这样才可以滑出鼠标的时候 动画会以动画的方式自动返回 */
+-webkit-transition:0.4s;
+margin-top: 10px;
+    }
+/*header .toolbar #user-tools li a .icon-arrow-down{
+
+}*/
+header .toolbar #user-tools li:hover a .icon-arrow-down{
+	    -webkit-transform: rotate(.5turn);
+    -ms-transform: rotate(.5turn); 
+	transform: rotate(.5turn);
+	}
+		
+header .toolbar #user-tools li a .icon-arrow-down:hover{
+	transform-origin:65% 45%;
+	-ms-transform-origin:65% 45%;
+	-webkit-transform-origin:65% 45% 0;
+transform:rotate(180deg)scale(1);/* 第一个参数旋转的角度 可以超过360  第二个参数为放大倍数大于1为放大 小于1为缩小*/
+-webkit-transform: rotate(180deg);   
+}
+header .toolbar #user-tools .dropdown-menu{
+	line-height: 1.8em;
+	display: block;}
+.dropdown-menu{
+	display: none;
+	position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   float: left;
+   min-width: 160px;
+   padding: 5px 0;
+   margin: 2px 0 0;
+   list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;}
+.dropdown-menu li a{    
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.428571429;
+    color: #666;
+    white-space: nowrap;}
+.header{color: #666;font-size: 14px;}

@@ -1,0 +1,5 @@
+Serif 衬线字体，字体边缘具有明显的艺术修饰效果，主要用于标题、大字体。如，宋体，Times New Roman
+
+Sans-Serif 非衬线字体，字体比划一般粗细均匀、清晰，主要用于少量正文。如，微软雅黑，Arial
+
+Monospace 等宽字体，主要针对英文，每个字符的宽度一致，如编程常用的字体。如，Consolas，Courier New
