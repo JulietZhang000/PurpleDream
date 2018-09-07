@@ -1,0 +1,285 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {
+ font-family:sans-serif;
+ -ms-text-size-adjust:100%;
+ -webkit-text-size-adjust:100%
+}
+body {
+ margin:0
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+ display:block;
+ /*<aside> 标签定义 article 以外的内容。aside 的内容应该与 article 的内容相关。*/
+/*<summary> 标签包含 details 元素的标题，"details" 元素用于描述有关文档或文档片段的详细信息。*/
+/*<figcaption> 标签定义 figure 元素的标题（caption）。
+"figcaption" 元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。*/
+/*<figure>标签用于对元素进行组合。 标签规定独立的流内容（图像、图表、照片、代码等等）。
+figure 元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响。*/
+/*在一个文档中，不能出现一个以上的 <main> 元素。<main> 元素不能是以下元素的后代：<article>、<aside>、<footer>、<header> 或 <nav>。所有浏览器都支持 <main> 标签，除了 Internet Explorer。*/
+/*<main> 标签规定文档的主要内容。
+<main> 元素中的内容对于文档来说应当是唯一的。它不应包含在文档中重复出现的内容，比如侧栏、导航栏、版权信息、站点标志或搜索表单。*/
+}
+audio,canvas,progress,video {
+ display:inline-block;
+ vertical-align:baseline   /*默认。元素放置在父元素的基线上。*/
+}
+audio:not([controls]) {
+ display:none;
+ height:0
+}
+[hidden],template {
+ display:none /*隐藏之后不占据空间*/
+}
+a {
+ background-color:transparent
+}
+a:active,a:hover {
+ outline:0
+}
+abbr[title] {
+ border-bottom:1px dotted   /*缩略词的标签*/
+}
+b,optgroup,strong {
+ font-weight:700    /*<strong>  >加粗文本<em>标签 > <b>  <optgroup>将选项分组显示*/
+}
+dfn {
+ font-style:italic  /*italic  浏览器会显示一个斜体的字体样式。 */
+}
+h1 {
+ font-size:2em;
+ margin:.67em 0
+}
+mark {
+ background:#ff0;   /*<mark> 标签定义带有记号的文本。请在需要突出显示文本时使用 <m> 标签。*/
+ color:#000
+}
+small {
+ font-size:80%      /*<small> 标签定义小型文本（和旁注）*/
+}
+sub,sup {   /*下标与上标*/
+ font-size:75%;
+ line-height:0;
+ position:relative;
+ vertical-align:baseline
+}
+sup {
+ top:-.5em
+}
+sub {
+ bottom:-.25em
+}
+img {
+ border:0;
+ vertical-align:middle
+}
+svg:not(:root) {
+ overflow:hidden   /*svg非根元素的元素*/
+}
+hr {
+ box-sizing:content-box;
+ /*  box-sizing属性允许您以特定的方式定义匹配某个区域的特定元素。
+例如，假如您需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。*/
+ height:0
+}
+pre,textarea {
+ overflow:auto    /*pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体*/
+}
+code,kbd,pre,samp {
+ font-family:monospace,monospace;    /* <samp> 标签并不经常使用。只有在要从正常的上下文中将某些短字符序列提取出来，对它们加以强调的极少情况下，才使用这个标签。*/
+ font-size:1em
+}
+button,input,optgroup,select,textarea {
+ color:inherit;
+ font:inherit;
+ margin:0
+}
+button {
+ overflow:visible
+}
+button,select {
+ text-transform:none; /*定义文本内容的大小写*/
+ 
+}
+button,html input[type=button],input[type=reset],input[type=submit] {
+ -webkit-appearance:button;
+ cursor:pointer   /*cursor 属性规定要显示的光标的类型（形状）。*/
+}
+button[disabled],html input[disabled] {
+ cursor:default
+}
+button::-moz-focus-inner,input::-moz-focus-inner {  /*用一个Firefox的私有伪元素去掉点击时的虚线*/
+ border:0;
+ padding:0
+}
+input {
+ line-height:normal
+}
+input[type=checkbox],input[type=radio] {
+ box-sizing:border-box;
+ padding:0
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {/* 伪元素改变number类型input框的默认样式*/
+ height:auto
+}
+input[type=search] {
+ -webkit-appearance:textfield;
+ box-sizing:content-box    /*在内容之外家边距*/
+}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+ -webkit-appearance:none
+}
+fieldset {
+ border:1px solid silver;
+ margin:0 2px;
+ padding:.35em .625em .75em  /*缩放比例*/
+}
+legend {
+ border:0;
+ padding:0
+}
+table {
+ border-collapse:collapse;  /*将表格的边框是否被合并为一个单一的边框*/
+ border-spacing:0
+}
+td,th {
+ padding:0
+}
+ul {
+ list-style:none;
+ padding:0
+}
+a,a:focus,img {
+ outline:0
+}
+li,p,ul {
+ padding:0;
+ margin:0
+}
+* {
+ box-sizing:border-box
+}
+:after,:before {
+ /*! box-sizing:border-box */
+}
+html {
+ font-size:10px;
+ -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+body {
+ font-family:'Hiragino Sans GB','Microsoft YaHei','黑体',sans-serif;
+ font-size:14px;
+ line-height:1.428571429;
+ color:#333;
+ background-color:#f0f0f0
+}
+button,input,select,textarea {
+ font-family:inherit;
+ font-size:inherit;
+ line-height:inherit
+}
+a:focus,a:hover {
+ color:#f46;
+ text-decoration:underline
+}
+a:focus {
+ outline:dotted thin;
+ outline:-webkit-focus-ring-color auto 5px;
+ outline-offset:-2px
+}
+figure {
+ margin:0
+}
+
+header div:first-child{background: #f0f0f0;}
+header div{display: block;}
+header .tool-bar-ctn{width: auto;height: 36px;}
+header .toolbar{padding: 0 4px;font-size: 12px;height: 36px;line-height: 36px;max-width: 1200px;margin-left: auto;margin-right: auto;}
+header .toolbar a{padding: 0 5px;}
+header .toolbar a:hover{padding: 0 5px;color: #FF4466;box-sizing:border-box;}
+header .toolbar .toolbar-link{float: left;width: 75%;margin-right: -75%;}
+header .toolbar .toolbar-link .hot-link{color: #f46;}
+header  i .sep{color: silver;margin-left: .5em;margin-right: .5em;}
+header .toolbar .toolbar-link .dropdown{display: inline;position: relative;}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu {
+ top:auto;
+ bottom:100%;
+ margin-bottom:2px
+}
+header .toolbar .toolbar-link .dropdown.mobile a{color: #f46;}
+header .toolbar #user-tools{float: right;margin: 0;color: #666;}
+header .toolbar a.no-padding{padding: 0;}
+header .tool-bar-ctn .toolbar #user-tools li{border-right: 0}
+header .toolbar #user-tools li{display:inline;height: 20px;padding: 2px 10px;border-right: 1px solid silver}
+header .toolbar #user-tools li .icon-arrow-down::before{ 
+	content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);     
+	 -webkit-transition: .4s -webkit-transform;
+ }
+    header .toolbar #user-tools li .icon-arrow-down{
+    	 display: inline-block;
+    	 -webkit-transition: .4s -webkit-transform;
+    transition: .4s -webkit-transform;
+    transition: .4s transform;
+    transition: .4s transform,.4s -webkit-transform;
+    margin-left: .4em;
+    vertical-align: -1px;
+    line-height: 1em;
+    padding-bottom: 1em;
+position:absolute;
+margin:auto;
+transition:0.4s;/*变化的时间  必须将其写在这里，不可以写在hover里面  只有这样才可以滑出鼠标的时候 动画会以动画的方式自动返回 */
+-webkit-transition:0.4s;
+margin-top: 10px;
+    }
+/*header .toolbar #user-tools li a .icon-arrow-down{
+
+}*/
+header .toolbar #user-tools li:hover a .icon-arrow-down{
+	    -webkit-transform: rotate(.5turn);
+    -ms-transform: rotate(.5turn); 
+	transform: rotate(.5turn);
+	}
+		
+header .toolbar #user-tools li a .icon-arrow-down:hover{
+	transform-origin:65% 45%;
+	-ms-transform-origin:65% 45%;
+	-webkit-transform-origin:65% 45% 0;
+transform:rotate(180deg)scale(1);/* 第一个参数旋转的角度 可以超过360  第二个参数为放大倍数大于1为放大 小于1为缩小*/
+-webkit-transform: rotate(180deg);   
+}
+header .toolbar #user-tools .dropdown-menu{
+	line-height: 1.8em;
+	display: block;}
+.dropdown-menu{
+	display: none;
+	position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   float: left;
+   min-width: 160px;
+   padding: 5px 0;
+   margin: 2px 0 0;
+   list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;}
+.dropdown-menu li a{    
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.428571429;
+    color: #666;
+    white-space: nowrap;}
+.header{color: #666;font-size: 14px;}
